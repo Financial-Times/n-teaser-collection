@@ -12,7 +12,21 @@
     "@financial-times/n-teaser": "^1.0.0"
   },
   "devDependencies": {
+    "@financial-times/n-gage": "^1.1.7",
     "bower": "^1.7.9",
     "npm-prepublish": "^1.2.1"
+  },
+  "config": {
+    "pre-git": {
+      "commit-msg": "simple",
+      "pre-commit": [],
+      "pre-push": [],
+      "post-commit": [],
+      "post-checkout": [],
+      "post-merge": []
+    }
+  },
+  "scripts": {
+    "commit": "commit-wizard"
   }
 }
