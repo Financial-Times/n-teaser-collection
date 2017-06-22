@@ -18,12 +18,10 @@
   },
   "config": {
     "pre-git": {
-      "commit-msg": "simple",
-      "pre-commit": [],
-      "pre-push": [],
-      "post-commit": [],
-      "post-checkout": [],
-      "post-merge": []
+      "pre-commit": [
+        "node_modules/.bin/secret-squirrel",
+        "make verify -j3"
+      ]
     }
   },
   "scripts": {
